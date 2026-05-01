@@ -1,34 +1,41 @@
-# Technical Specification: `pom.xml`
+# Java Starter Kit: Technical Guide
 
-The `pom.xml` file serves as the project's **declarative configuration**, managing the build lifecycle, environment properties, and dependency resolution.
-
----
-
-### 1. Build Environment & Properties
-We leverage Maven properties to ensure build reproducibility and cross-platform compatibility:
-
-*   **Java Roadmap:** Configured with `maven.compiler.source` and `target` to enforce the **Java 17+** bytecode version.
-*   **Encoding:** Global use of `UTF-8` via `project.build.sourceEncoding` to prevent character corruption across different OS environments.
-*   **Dependency Management:** Centralized versioning (e.g., `${lombok.version}`) to maintain consistency across the dependency tree.
+This guide explains how the `pom.xml` file organizes the project. Think of it as the **instruction manual** that tells Maven how to build the application and what tools to use.
 
 ---
 
-### 2. Dependency Architecture
-The project utilizes a curated stack of industry-standard libraries:
+### 1. Project Setup (Environment)
+These settings ensure the code works the same way on everyone's computer:
 
-*   **Logging Layer:** `SLF4J` abstraction with `Log4j2` implementation for high-performance, asynchronous logging.
-*   **Boilerplate Reduction:** `Project Lombok` for cleaner POJOs, utilizing compile-time annotation processing.
-*   **Testing Suite:**
-    *   **JUnit 5 (Jupiter):** Modern testing engine for unit and integration tests.
-    *   **Mockito:** Behavioral testing through robust mocking and verification.
-    *   **Mockito-JUnit-Jupiter:** Seamless integration to manage mock lifecycles automatically.
+*   **Java Version:** We use **Java 17**. This setting tells the computer to use modern Java features to compile and run the code.
+*   **Encoding (UTF-8):** This ensures that special characters (like accents or symbols) are displayed correctly in any operating system.
+*   **Version Control:** We use variables (like `${lombok.version}`) to manage library versions in one single place, making it easier to update them later.
 
-
-> [!NOTE]
-> **On Scopes:** We strictly follow Maven scopes (`test`, `provided`) to minimize the final artifact size and prevent classpath pollution in production.
+<br/>
 
 ---
 
-### 3. Build Plugins & Lifecycle
-*   **Maven Surefire Plugin:** Integrated into the `test` phase to automate the execution of the testing suite and generate XML/HTML reports.
-*   **Resource Management:** Automated handling of project resources and compiler optimizations during the `package` phase.
+### 2. Tools & Libraries (Dependencies)
+Dependencies are external "toolkits" we add to the project so we don't have to code everything from scratch:
+
+*   **Logging (SLF4J + Log4j2):** Instead of using simple print statements, we use these professional tools to record what happens in the app (errors, info, warnings).
+*   **Lombok:** A "shortcut" library. It automatically creates common code like Getters and Setters, keeping our files clean and short.
+*   **Testing Suite (JUnit 5 & Mockito):** 
+    *   **JUnit:** The standard tool for checking if our code works as expected.
+    *   **Mockito:** Allows us to create "fake" objects to test specific parts of the code without needing a real database or server.
+
+> [!TIP]
+> **What is "Scope"?** 
+> Some tools are only needed for testing (Scope: `test`) and won't be included when we launch the app to production. This keeps the final app lightweight.
+
+<br/>
+
+---
+
+### 3. Automation (Plugins)
+Plugins are like "robots" that perform repetitive tasks automatically:
+
+*   **Surefire Plugin:** This "robot" automatically runs all your tests every time you build the project to make sure nothing is broken.
+*   **Build Process:** Handles the heavy lifting of turning your source code into a professional package ready to be shared.
+
+---
