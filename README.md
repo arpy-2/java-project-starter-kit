@@ -1,8 +1,12 @@
 
-![Java](https://img.shields.io/badge/Java-17+-orange?style=flat&logo=java)
-![Maven](https://img.shields.io/badge/Maven-Build-blue?style=flat&logo=apache-maven)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat)](https://opensource.org/licenses/MIT)
-![Maintained](https://img.shields.io/badge/Maintained%3F-yes-brightgreen?style=flat)
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-17+-orange?style=flat&logo=java" alt="Java">
+  <img src="https://img.shields.io/badge/Maven-Build-blue?style=flat&logo=apache-maven" alt="Maven">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-green?style=flat" alt="License">
+  </a>
+  <img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen?style=flat" alt="Maintained">
+</p>
 
 # Java Starter Kit: Technical Guide
 This guide explains how the `pom.xml` file organizes the project. Think of it as the **instruction manual** that tells Maven how to build the application and what tools to use.
