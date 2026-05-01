@@ -11,6 +11,8 @@ We leverage Maven properties to ensure build reproducibility and cross-platform 
 *   **Encoding:** Global use of `UTF-8` via `project.build.sourceEncoding` to prevent character corruption across different OS environments.
 *   **Dependency Management:** Centralized versioning (e.g., `${lombok.version}`) to maintain consistency across the dependency tree.
 
+<br/>
+---
 
 ### 2. Dependency Architecture
 The project utilizes a curated stack of industry-standard libraries:
@@ -26,6 +28,8 @@ The project utilizes a curated stack of industry-standard libraries:
 > [!NOTE]
 > **On Scopes:** We strictly follow Maven scopes (`test`, `provided`) to minimize the final artifact size and prevent classpath pollution in production.
 
+<br/>
+---
 
 ### 3. Build Plugins & Lifecycle
 *   **Maven Surefire Plugin:** Integrated into the `test` phase to automate the execution of the testing suite and generate XML/HTML reports.
