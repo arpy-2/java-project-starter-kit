@@ -1,5 +1,12 @@
-# Java Starter Kit: Technical Guide
 
+![Java](https://img.shields.io/badge/Java-17+-orange?style=for-the-badge&logo=java)
+![Maven](https://img.shields.io/badge/Maven-Build-blue?style=for-the-badge&logo=apache-maven)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green?style=for-the-badge)
+
+---
+
+# Java Starter Kit: Technical Guide
 This guide explains how the `pom.xml` file organizes the project. Think of it as the **instruction manual** that tells Maven how to build the application and what tools to use.
 
 ---
