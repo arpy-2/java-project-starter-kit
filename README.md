@@ -47,7 +47,7 @@ Plugins are like "robots" that perform repetitive tasks automatically:
 
 | Concept | Reference |
 | :--- | :--- |
-| 🏛️ **Institution** | [IES Enrique Tierno Galván](https://site.educa.madrid.org/ies.tiernogalvan.madrid/) |
-| 📜 **License** | [MIT License](LICENSE) |
-| 🤖 **Support** | [Gemini AI](https://gemini.google.com) |
+| **Institution** | [IES Enrique Tierno Galván](https://site.educa.madrid.org/ies.tiernogalvan.madrid/) |
+| **License** | [MIT License](LICENSE) |
+| **Support** | [Gemini AI](https://gemini.google.com) |
 
