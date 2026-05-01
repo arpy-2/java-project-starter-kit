@@ -44,11 +44,14 @@ Plugins are like "robots" that perform repetitive tasks automatically:
 ---
 
 ## License
-<p align="center">
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/LICENSE-MIT-black?style=for-the-badge&logo=openeditor&logoColor=white" alt="MIT License">
-  </a>
-</p>
+
+| Fuente | Detalle |
+| :--- | :--- |
+| **Institución** | [Nombre de tu Instituto](URL_DEL_INSTITUTO_SI_TIENE) |
+| **Licencia** | [![License: MIT](https://img.shields.io/badge/MIT-License-green?style=flat-square)](LICENSE) |
+| **Soporte** | [Gemini AI](https://gemini.google.com) |
+
+---
 
 <p align="center">
   This project is open-source under the <strong>MIT License</strong>.
