@@ -35,3 +35,6 @@ Plugins are like "robots" that perform repetitive tasks automatically:
 *   **Build Process:** Handles the heavy lifting of turning your source code into a professional package ready to be shared.
 
 ---
+
+## ⚖️ License
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
