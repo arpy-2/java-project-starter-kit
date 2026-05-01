@@ -2,9 +2,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Java-17+-orange?style=flat&logo=java" alt="Java">
   <img src="https://img.shields.io/badge/Maven-Build-blue?style=flat&logo=apache-maven" alt="Maven">
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-green?style=flat" alt="License">
-  </a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green?style=flat" alt="License"></a>
   <img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen?style=flat" alt="Maintained">
 </p>
 
