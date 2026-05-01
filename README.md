@@ -1,4 +1,4 @@
-# 📦 Technical Specification: `pom.xml`
+# Technical Specification: `pom.xml`
 
 The `pom.xml` file serves as the project's **declarative configuration**, managing the build lifecycle, environment properties, and dependency resolution.
 
