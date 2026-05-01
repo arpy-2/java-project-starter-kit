@@ -1,8 +1,8 @@
 
-![Java](https://img.shields.io/badge/Java-17+-orange?style=for-the-badge&logo=java)
-![Maven](https://img.shields.io/badge/Maven-Build-blue?style=for-the-badge&logo=apache-maven)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
-![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green?style=for-the-badge)
+![Java](https://img.shields.io/badge/Java-17+-orange?style=flat-square&logo=java)
+![Maven](https://img.shields.io/badge/Maven-Build-blue?style=flat-square&logo=apache-maven)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
+![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green?style=flat-square)
 
 ---
 
