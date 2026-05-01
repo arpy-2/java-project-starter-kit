@@ -45,16 +45,9 @@ Plugins are like "robots" that perform repetitive tasks automatically:
 
 ## License
 
-| Fuente | Detalle |
+| Concept | Reference |
 | :--- | :--- |
-| **Institución** | [Nombre de tu Instituto](URL_DEL_INSTITUTO_SI_TIENE) |
-| **Licencia** | [![License: MIT](https://img.shields.io/badge/MIT-License-green?style=flat-square)](LICENSE) |
-| **Soporte** | [Gemini AI](https://gemini.google.com) |
+| 🏛️ **Institution** | [IES Enrique Tierno Galván](https://site.educa.madrid.org/ies.tiernogalvan.madrid/) |
+| 📜 **License** | [MIT License](LICENSE) |
+| 🤖 **Support** | [Gemini AI](https://gemini.google.com) |
 
----
-
-<p align="center">
-  This project is open-source under the <strong>MIT License</strong>.
-  <br>
-  <sub>Refined with the support of <a href="https://gemini.google.com">Gemini AI</a></sub>
-</p>
