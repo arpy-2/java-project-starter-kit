@@ -36,5 +36,5 @@ Plugins are like "robots" that perform repetitive tasks automatically:
 
 ---
 
-## ⚖️ License
+## License
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
