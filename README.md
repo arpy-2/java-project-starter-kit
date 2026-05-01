@@ -4,8 +4,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat)](https://opensource.org/licenses/MIT)
 ![Maintained](https://img.shields.io/badge/Maintained%3F-yes-brightgreen?style=flat)
 
----
-
 # Java Starter Kit: Technical Guide
 This guide explains how the `pom.xml` file organizes the project. Think of it as the **instruction manual** that tells Maven how to build the application and what tools to use.
 
