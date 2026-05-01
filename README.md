@@ -1,44 +1,32 @@
-# Explanation of `pom.xml`
+# 📦 Technical Specification: `pom.xml`
 
-This Maven project includes several key sections that are important to understand when working with Java and external dependencies.
-
----
-
-## 1. Project Properties
-
-- **maven.compiler.source / maven.compiler.target**: Java version used to compile and run the project.  
-- **project.build.sourceEncoding**: Character encoding used by the project (UTF-8 recommended).  
-- **lombok.version**: Version of the Lombok library to use.
+The `pom.xml` file serves as the project's **declarative configuration**, managing the build lifecycle, environment properties, and dependency resolution.
 
 ---
 
-## 2. Dependencies
+### 1. Build Environment & Properties
+We leverage Maven properties to ensure build reproducibility and cross-platform compatibility:
 
-- **SLF4J + Log4j**: Logging libraries for recording debug messages, information, warnings, and errors.  
-- **Lombok**: Library that reduces repetitive code like getters, setters, and constructors.  
-- **JUnit 5**: Framework for writing and running unit tests.  
-- **Mockito**: Library for creating simulated objects (mocks) in unit tests.  
-- **Mockito JUnit 5 integration**: Integrates Mockito with JUnit 5 to simplify testing.
+*   **Java Roadmap:** Configured with `maven.compiler.source` and `target` to enforce the **Java 17+** bytecode version.
+*   **Encoding:** Global use of `UTF-8` via `project.build.sourceEncoding` to prevent character corruption across different OS environments.
+*   **Dependency Management:** Centralized versioning (e.g., `${lombok.version}`) to maintain consistency across the dependency tree.
 
-**Notes on dependency scopes:**
-- `provided`: The dependency is needed only at compile-time and is not included in the final package.  
-- `test`: The dependency is only used for running tests, not in production code.
 
----
+### 2. Dependency Architecture
+The project utilizes a curated stack of industry-standard libraries:
 
-## 3. Build / Plugins
+*   **Logging Layer:** `SLF4J` abstraction with `Log4j2` implementation for high-performance, asynchronous logging.
+*   **Boilerplate Reduction:** `Project Lombok` for cleaner POJOs, utilizing compile-time annotation processing.
+*   **Testing Suite:**
+    *   **JUnit 5 (Jupiter):** Modern testing engine for unit and integration tests.
+    *   **Mockito:** Behavioral testing through robust mocking and verification.
+    *   **Mockito-JUnit-Jupiter:** Seamless integration to manage mock lifecycles automatically.
 
-- **Maven Surefire Plugin**: Runs unit tests during the test phase of the Maven build lifecycle.  
 
-Plugins allow Maven to perform additional tasks such as compiling code, running tests, or packaging applications.
+> [!NOTE]
+> **On Scopes:** We strictly follow Maven scopes (`test`, `provided`) to minimize the final artifact size and prevent classpath pollution in production.
 
----
 
-## 4. General Concepts
-
-- **Dependencies**: External libraries needed to compile or run the project.  
-- **Plugins**: Tools in Maven that extend its functionality during specific lifecycle phases.  
-- **Scope**: Indicates when a dependency is required (compile-time, runtime, test, etc.).  
-- **Lombok and testing libraries**: Help write cleaner code and automate tests efficiently.
-
----
+### 3. Build Plugins & Lifecycle
+*   **Maven Surefire Plugin:** Integrated into the `test` phase to automate the execution of the testing suite and generate XML/HTML reports.
+*   **Resource Management:** Automated handling of project resources and compiler optimizations during the `package` phase.
