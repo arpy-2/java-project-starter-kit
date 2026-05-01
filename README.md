@@ -11,8 +11,6 @@ These settings ensure the code works the same way on everyone's computer:
 *   **Encoding (UTF-8):** This ensures that special characters (like accents or symbols) are displayed correctly in any operating system.
 *   **Version Control:** We use variables (like `${lombok.version}`) to manage library versions in one single place, making it easier to update them later.
 
-<br/>
-
 ---
 
 ### 2. Tools & Libraries (Dependencies)
@@ -27,8 +25,6 @@ Dependencies are external "toolkits" we add to the project so we don't have to c
 > [!TIP]
 > **What is "Scope"?** 
 > Some tools are only needed for testing (Scope: `test`) and won't be included when we launch the app to production. This keeps the final app lightweight.
-
-<br/>
 
 ---
 
