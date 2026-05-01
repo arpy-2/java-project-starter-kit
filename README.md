@@ -37,9 +37,8 @@ Plugins are like "robots" that perform repetitive tasks automatically:
 ---
 
 ## License
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
-
 ---
 
-## Credits
-This project's documentation was refined for professional standards with the support of [Gemini AI](https://gemini.google.com).
+## ⚖️ License
+This project is licensed under the [MIT License](LICENSE).  
+*Special thanks to the [Gemini AI Community](https://gemini.google.com) for technical documentation guidance.*
